@@ -1,0 +1,241 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+body{
+    background-color:lavender;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+.container h1{
+    text-align: center;
+    padding: 20px 0;
+    text-shadow: 5px 5px 5px white;
+}
+.numbers{
+    text-align: center;
+    
+}
+.container a{
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: black;
+    margin: 5px 2px;
+    display:inline-block;
+    background-color:#fff;
+}
+.question{
+    width: 100%;
+    height: 100px;
+    border-radius: 25px;
+    margin: 30px 0;
+    box-shadow: 5px 5px 10px black;
+    padding: 10px 20px;
+    display: table;
+    background-color: #fff;
+    margin-top: 40px;
+}
+.question h2{
+    display: table-cell;
+    vertical-align: middle;
+}
+.answer{
+    width: 90%;
+    height: 50px;
+    border-radius: 25px;
+    margin: 30px auto;
+    box-shadow: 5px 5px 10px black;
+    padding: 10px 20px;
+    display: table;
+    background-color:#fff;
+    font-size: 18px;
+}
+.answer p{
+    display: table-cell;
+    vertical-align: middle;
+}
+.answer:hover{
+    background-color: darkgray;
+}
+.btn_finish{
+    width: 20%;
+    font-size: 30px;
+    padding: 10px 0px;
+    background-color: rgba(0, 255, 115, 0.795);
+    border-radius: 20px;
+    border:none;
+    box-shadow: 5px 5px 10px black;
+    margin: 30px auto;
+    display: table;
+    transition: 0.6s ease;
+}
+.btn_finish:hover{
+    background-color: rgba(148, 243, 191, 0.795);
+}
+
+#result{
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px; 
+    right: 0px;
+    transition: 3.5s ease;
+    opacity: 0;
+}
+#result h1{
+    font-size: 100px;
+    padding: 20px 10px;
+    margin-bottom: 40px;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 60px;
+}
+.left{
+    width: 10%;
+}
+.temperaments{
+    width: 70%;
+}
+.temperaments h2, .results h2{
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation: animated-text 2s steps(30,end) 1s 1 normal both;
+}
+#temp1{
+    color:rgb(110, 5, 5);
+}
+#result_1{
+    color:rgb(110, 5, 5);
+}
+@keyframes animated-text{
+    from{width: 0; }
+    to{width: 600px; }
+  }
+.results{
+    width: 20%;
+}
+
+.close {
+    color: black;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: darkorange;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 374px) {
+    .btn_finish{
+        font-size: 14px;
+    }
+    #result h1{
+        font-size: 32px;
+        margin-top: 20px;
+    }
+    .content{
+        font-size: 20px;
+    }
+    .temperaments{
+        width: 55%;
+    }
+    .close {
+        top: 0px;
+        left: 40px;
+      }
+}
+@media (min-width:375px) and (max-width: 575px){
+	.btn_finish{
+        font-size: 14px;
+    }
+    #result h1{
+        font-size: 34px;
+        margin-top: 20px;
+    }
+    .content{
+        font-size: 22px;
+    }
+    .temperaments{
+        width: 55%;
+    }
+    .close {
+        top: 0px;
+        left: 40px;
+      }
+}
+@media (min-width: 576px) and (max-width: 767px){
+    .btn_finish{
+        font-size: 14px;
+    }
+    #result h1{
+        font-size: 40px;
+        margin-top: 20px;
+    }
+    .content{
+        font-size: 26px;
+    }
+    .temperaments{
+        width: 55%;
+    }
+    .close {
+        top: 0px;
+        left: 40px;
+    }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+	.btn_finish{
+        font-size: 18px;
+    }
+    #result h1{
+        font-size: 60px;
+        margin-top: 20px;
+    }
+    .content{
+        font-size: 36px;
+    }
+    .temperaments{
+        width: 60%;
+    }
+    .close {
+        top: 0px;
+        left: 40px;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1600px) {
+	.btn_finish{
+        font-size: 20px;
+    }
+    #result h1{
+        font-size: 80px;
+        margin-top: 20px;   
+    }
+    .content{
+        font-size: 46px;
+    }
+    .temperaments{
+        width: 60%;
+    }
+    .close {
+        top: 40px;
+        right: 40px;
+    }
+}
+
