@@ -6,10 +6,10 @@ let sum = 0;
 function green(n, t){
     document.getElementById(n).style.backgroundColor = "rgba(89, 243, 89, 0.562)";
     if(t>200){
-        document.getElementsByClassName("answer")[(t-200)*2-1].style.backgroundColor = "darkgray";
+        document.getElementsByClassName("answer")[(t-200)*2-1].style.backgroundColor = "rgba(148, 243, 191, 0.795)";
         document.getElementsByClassName("answer")[(t-200)*2-2].style.backgroundColor = "white";
     }else{
-        document.getElementsByClassName("answer")[(t-101)*2].style.backgroundColor = "darkgray";
+        document.getElementsByClassName("answer")[(t-101)*2].style.backgroundColor = "rgba(148, 243, 191, 0.795)";
         document.getElementsByClassName("answer")[(t-101)*2+1].style.backgroundColor = "white";
     }
     
