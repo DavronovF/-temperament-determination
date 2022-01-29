@@ -58,4 +58,4 @@ function result(){
     sum = 0;
 }
 let span = document.getElementsByClassName("close")[0];
-span.onclick = function(){window.open("index.html");}
+span.onclick = function(){window.open("index.html", "_self");}
